@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body { 
+    font-family: Montserrat, serif;
+    background: #CECECE;
+    background: -moz-linear-gradient(left, #CECECE 0%, #424548 50%, #212529 100%);
+    background: -webkit-linear-gradient(left, #CECECE 0%, #424548 50%, #212529 100%);
+    background: linear-gradient(to right, #CECECE 0%, #424548 50%, #212529 100%);
+}
+
+p {
+    color: rgb(175, 185, 185);
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: rgb(177, 185, 185);
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(177, 185, 185);
+}
+
+.navbar-brand img{
+    width:  80px;
+}
+
+.navbar-toggler{
+    background-color: rgb(177, 185, 185);
+}
+.col-lg-3 {
+    margin-right: 0;
+}
+
+.sidebar {
+    color: rgb(175, 185, 185);    
+}
+
+.card {
+    color: rgb(175, 185, 185);
+    background: #212529;
+    background: -moz-linear-gradient(left,#212529 0%, #424548 50%, #9f9d9d 100%);
+    background: -webkit-linear-gradient(left, #212529 0%, #424548 50%, #9f9d9d 100%);
+    background: linear-gradient(to right, #212529 0%, #424548 50%, #9f9d9d 100%); 
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(175, 185, 185);
+}
+
+.card .btn {
+    color: white;
+}
+
+.slide-text {
+    color: rgb(175, 185, 185);
+    margin: auto auto;
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators{
+        display: none;
+    }
+}
+
+footer {
+    background: #212529;
+    background: -moz-linear-gradient(left,#212529 0%, #424548 50%, #9f9d9d 100%);
+    background: -webkit-linear-gradient(left, #212529 0%, #424548 50%, #9f9d9d 100%);
+    background: linear-gradient(to right, #212529 0%, #424548 50%, #9f9d9d 100%); 
+}
+
+.footer-text {
+    color: rgb(175, 185, 185);
+    margin: auto auto;
+}
+
+.call-anim {
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+    0%,
+    100% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    15% {
+        transform: translateX(15px) rotate(-6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
