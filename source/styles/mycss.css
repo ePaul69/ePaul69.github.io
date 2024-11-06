@@ -12,8 +12,31 @@ p {
     color: rgb(175, 185, 185);
 }
 
+h3 {
+    color: rgb(175, 185, 185);
+}
+
+.navbar {
+    margin: 0 auto;
+}
+
 .navbar-collapse{
     justify-content: flex-end;
+}
+
+.navbar-center {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-right {
+    display: flex;
+    justify-content: right;
+}
+
+.nav-item-right {
+    margin-right: 20px;
+    
 }
 
 .nav-link {
@@ -54,17 +77,17 @@ p {
 
 .card .btn {
     color: white;
+    background-color: #424548;
+    border-color: rgb(175, 185, 185);
+
+}
+.card-btn {
+    margin: 1em;
 }
 
 .slide-text {
     color: rgb(175, 185, 185);
     margin: auto auto;
-}
-
-@media (max-width: 755px) {
-    .carousel-indicators{
-        display: none;
-    }
 }
 
 footer {
@@ -81,6 +104,12 @@ footer {
 
 .call-anim {
     animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes myAnim {
@@ -110,8 +139,17 @@ footer {
     }
 }
 
-.media-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 755px) {
+    .carousel-indicators{
+        display: none;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+    .navbar-right {
+        justify-content: left;
+    }
+
 }
+
